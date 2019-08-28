@@ -1,6 +1,6 @@
 <?php
 require_once './header.php';
-require_once './restrictedsession.php';
+
 $query = "SELECT iId, iName, iDescription, iPrice, iStatus, iSize, iImage FROM Item";
 if(isset($_POST['keyword'])){
     $keyword = sanitizeString($_POST['keyword']);
