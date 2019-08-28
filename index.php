@@ -1,31 +1,32 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Hoang Shop</title>
+        <title>Baby lady</title>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <style>
             .container{
                 width: 100%;
                 margin: 0 auto;
+                background-image: url("10.jpg");
             }
             .container img{
-                width: 100%;
+                width: 30%;
+                height: 50%;
+                
 
             }
-            .footer{
-                width: 100%;
-                height: 100px;
-                background-color: black;
-            }
+            
+            
             .main{
                 width: 100%;
                 overflow: hidden;
-                background-color: white;
+                
             }
 
             .image img{
                 width: 100%;
+                
             }
             .detail{
                 width: 100%;
@@ -36,9 +37,10 @@
                 background-color: white;
                 font-size: 25px;
                 line-height: 30px;
-                padding-left: 5px;
+                margin-right: 1000px;
+               
                 font-weight: bold;
-                color: black;
+                color: pink;
             }
             .detail{
                 padding-left: 15px;
@@ -71,7 +73,8 @@
             .nav{
                 width: 100%;
                 height: 50px;
-                background-color: black;
+                background-color: pink;
+                color: pink;
             }
             .nav ul{
                 margin: 0;
@@ -117,16 +120,16 @@ if (!$result1){
 ?>
 
         <div class="container">
-            <center><img src="images/lv.jpg"></center>
+            <center><img src="images/1.jpg" ></center>
             <div class="header">
                 
                 <div class="nav">
                     <ul>
                         <li><a href="./index.php">Home</a></li>
-                        <li><a href="./login.php">Admin</a></li>
-                        <li><a href="#Bag">Bag</a></li>
-                        <li><a href="#Leather">Leather</a></li>
-                        <li><a href="#Pants">Pants</a></li>
+                        <li><a href="#Princess">Princess</a></li>
+                        <li><a href="#Black baby">Black baby</a></li>
+                        <li><a href="#Mermaid" >Mermaid</a></li>
+                        <li><a href="./login.php" style="margin-left:900px" >Admin</a></li>
 
                     </ul>
 
@@ -134,14 +137,14 @@ if (!$result1){
                 </div>
             </div>
             <div class="main">
+                
                 <div class="hot">
 
                     <div class="detail">
                         <div class="title">
-                            <i>Louis Vuitton Store</i>
+                            <i></i>
                         </div>
                         <div class="des">
-                            Find Your Style Here ! 
                         </div>
                     </div>
                 </div>
@@ -149,7 +152,7 @@ if (!$result1){
 
                 </div>
                 <div class="list w3-row">
-                    <div class="" id="Bag"><h2>Bag</h2>
+                    <div class="" id="Princess"><h2>Princess</h2>
                     <?php
      require_once './functions.php';
      $query = "SELECT iId, iName, iDescription, iPrice, iStatus, iSize, iImage,cName FROM Item,Catalogue WHERE Item.catalogueId=Catalogue.cId AND cName LIKE '%Bag%'  ORDER BY cName";
@@ -194,7 +197,7 @@ if (!$result1){
      
                 </div>        
                     <div class="list w3-row">
-                    <div class=""id="Leather"><h2>Leather</h2>
+                    <div class="" id="Black baby"><h2>Black baby</h2>
                     <?php
      require_once './functions.php';
      $query = "SELECT iId, iName, iDescription, iPrice, iStatus, iSize, iImage,cName FROM Item,Catalogue WHERE Item.catalogueId=Catalogue.cId AND cName LIKE '%Leather%'  ORDER BY cName";
@@ -240,7 +243,7 @@ if (!$result1){
                 </div>
                                         </div>        
                     <div class="list w3-row">
-                    <div class=""id="Pants"><h2>Pants</h2>
+                    <div class=""id="Mermaid"><h2>Mermaid</h2>
                     <?php
      require_once './functions.php';
      $query = "SELECT iId, iName, iDescription, iPrice, iStatus, iSize, iImage,cName FROM Item,Catalogue WHERE Item.catalogueId=Catalogue.cId AND cName LIKE '%Pants%'  ORDER BY cName";

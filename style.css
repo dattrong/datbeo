@@ -1,0 +1,200 @@
+html{
+	font-family: Lato,sans-serif;
+	
+}
+.header{
+        background-image: url(2.jpg);
+        height: 300px;
+        width: 1800px;
+        }
+    .p{
+        font-size: 25px;
+    }
+
+.dcm{
+    margin-left: 20px;
+
+}
+
+.boder{
+    border-width: 2px;
+    border-style: solid;
+    width: 300px;
+    height: 300px;
+    float: left;
+    margin-left: 300px;
+    margin-top: 30px; 
+}
+.b_whey{
+    border-width: 2px;
+    border-style: solid;
+    height: 380px;
+    width: 350px;
+    float: left;
+    margin-left: 20px;
+}
+.wheyprotein{
+    margin-left: 200px;
+    margin-top: 30px;
+}
+.text_whey{
+    margin-left: 80px;
+    font-size: 25px;
+    color: black;
+
+}
+.CONCENTRATE{
+    width: 300px;
+    margin-top: 20px;
+}
+.b_CONCENTRATE{
+    border-width: 2px;
+    border-style: solid;
+    height: 300px;
+    margin-top: 30px;
+
+}
+.a_text{
+    width: 300px;
+    margin-left: 300px;
+}
+.b_MYPROTEIN{
+    border-width: 2px;
+    border-style: solid;
+    height: 300px;
+    margin-top: 30px;
+}
+.b_BULKPOWDER{
+    border-width: 2px;
+    border-style: solid;
+    height: 300px;
+    margin-top: 30px;
+}
+.BCAA{
+     margin-left: 200px;
+    margin-top: 30px;
+}
+.b_BCAA{
+    border-width: 2px;
+    border-style: solid;
+    height: 400px;
+    width: 350px;
+    float: left;
+    margin-left: 20px;
+}
+.text_BCAA{
+    margin-left: 80px;
+    font-size: 25px;
+    color: black;
+}
+.b_BCAA211{
+    border-width: 2px;
+    border-style: solid;
+    height: 300px;
+    margin-top: 30px;
+}
+.b_BCAA411{
+    border-width: 2px;
+    border-style: solid;
+    height: 300px;
+    margin-top: 30px;
+}
+.b_BCAA811{
+    border-width: 2px;
+    border-style: solid;
+    height: 300px;
+    margin-top: 30px;
+}
+.CREATINE{
+    margin-left: 200px;
+    margin-top: 30px;
+}
+.b_CREATINE{
+    border-width: 2px;
+    border-style: solid;
+    height: 400px;
+    width: 400px;
+    float: left;
+    margin-left: 20px;
+}
+.text_CREATINE{
+    margin-left: 100px;
+    font-size: 20px;
+    color: black;
+    margin-top: 20px;
+}
+.b_MONOHYDRATE{
+    border-width: 2px;
+    border-style: solid;
+    height: 300px;
+    margin-top: 30px;
+}
+.b_CREPURE{
+    border-width: 2px;
+    border-style: solid;
+    height: 300px;
+    margin-top: 30px;
+}
+.FISHOIL{
+    margin-left: 200px;
+    margin-top: 30px;
+}
+
+.b_FISHOIL{
+    border-width: 2px;
+    border-style: solid;
+    height: 400px;
+    width: 400px;
+    float: left;
+    margin-left: 20px;
+}
+.b_OMEGA3{
+    border-width: 2px;
+    border-style: solid;
+    height: 300px;
+    margin-top: 30px;
+
+
+}    
+.b_OMEGA369{
+    border-width: 2px;
+    border-style: solid;
+    height: 300px;
+    width: 250px;
+    margin-top: 30px;
+    float: left;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+
+
+
+
+
+        
+        
+          
+
+
