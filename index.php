@@ -129,7 +129,7 @@ if (!$result1){
                         <li><a href="#Princess">Princess</a></li>
                         <li><a href="#Black baby">Black baby</a></li>
                         <li><a href="#Mermaid" >Mermaid</a></li>
-                        <li><a href="./login.php" style="margin-left:900px" >Admin</a></li>
+                        <li><a href="./login.php" style="margin-left:500px" >Admin</a></li>
 
                     </ul>
 
