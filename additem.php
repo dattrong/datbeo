@@ -21,9 +21,12 @@ if (isset($_POST['add'])) { //adding
         $extension = $parts[$lastIndex];
         $iImage = "$iId.$extension";
         $destination = "./images/item/$iImage";
+        //Move the file from temp loc => to our image folder
         move_uploaded_file($temp_name, $destination);
     }
     $cId = sanitizeString($_POST['cid']);
+    //TODO: Do the PHP validation here to protect your server
+    //Add the student
     $query = "INSERT INTO Item values ('$iId','$iName','$iDescription','$iPrice','$iStatus','$iSize','$iImage','$cId')";
     $result = queryMySql($query);
     if (!$result) {

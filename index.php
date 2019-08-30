@@ -45,7 +45,7 @@
                 box-sizing: border-box;
             }
             .des{
-                color: green;
+                color: greenyellow;
                 font-size: 18px;
                 padding-left: 10px;
                 padding-top: 10px;
@@ -71,7 +71,7 @@
             .nav{
                 width: 100%;
                 height: 50px;
-                background-color: pink;
+                background-color: black;
             }
             .nav ul{
                 margin: 0;
@@ -79,7 +79,7 @@
                 list-style: none;
             }
             .nav a{
-                color:purple;
+                color:whitesmoke;
                 font-size: 30px;
                 text-decoration: none;
                 line-height: 50px;
@@ -90,10 +90,10 @@
                 float: left;
             }
             .nav a:hover{
-                color: black;
+                color: #792323;
             }
             .nav li:hover{
-                background-color:red;
+                background-color:#DCF4F6;
             }
         </style>
     </head>
@@ -115,8 +115,8 @@ if (!$result){
                 
                 <div class="nav">
                     <ul>
-                        <center><li><a href="./index.php">Home</a></li></center>
-                        <center><li><a href="./header.php">Admin</a></li></center>
+                        <li><a href="./index.php">Home</a></li>
+                        <li><a href="./login.php">Admin</a></li>
                         <li><a href="#Lego">Lego</a></li>
                         <li><a href="#Figure">Figure</a></li>
                         <li><a href="#Clay">Clay</a></li>

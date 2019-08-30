@@ -3,21 +3,21 @@ require_once './header.php';
 
 $query = "SELECT cid, cname, cdescription from catalogue";
 $result = queryMysql($query);
-$result = queryMysql($query);
-$result->setFetchMode(PDO::FETCH_ASSOC);
-$result->execute();
-$resultSet = $result->fetchAll();
+$error = $msg = "";
+if (!$result){
+    $error = "Couldn't load data, please try again.";
+}
 ?>
 <br><br>
 <br>
 <table class="tbl">
     <tr>
-        <th>Name</th>
-        <th>Description</th>
+        <th> Name</th>
+        <th> Description</th>
         <th>Options</th>
     </tr>
     <?php
-    foreach ($resultSet as $row){
+    while ($row = mysqli_fetch_array($result)) 
         $cName = $row['cname'];
         $cDescription = $row['cdescription'];
         echo "<tr>";
@@ -26,17 +26,17 @@ $resultSet = $result->fetchAll();
         ?>
         <td>
             <form class="frminline" action="deletecatalogue.php" method="post" onsubmit="return confirmDelete();">
-                <input type="hidden" name="cid" value="<?php echo $row['cid'] ?>" />
+                <input type="hidden" name="cId" value="<?php echo $row['cid'] ?>" />
                 <input type="submit" value="Delete" />
             </form>
             <form class="frminline" action="updatecatalogue.php" method="post">
-                <input type="hidden" name="cid" value="<?php echo $row['cid'] ?>" />
+                <input type="hidden" name="cId" value="<?php echo $row['cid'] ?>" />
                 <input type="submit" value="Update" />
             </form>
         </td>
         <?php
         echo "</tr>";
-    }
+    
     ?>
     <script>
         function confirmDelete() {
